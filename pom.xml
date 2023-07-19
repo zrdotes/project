@@ -16,9 +16,9 @@
         <maven.surefire.plugin.version>2.22.2</maven.surefire.plugin.version>
         <selenide.version>6.15.0</selenide.version>
         <owner.version>1.0.12</owner.version>
-        <junit.jupiter.version>5.9.0</junit.jupiter.version>
+        <junit.jupiter.version>5.9.2</junit.jupiter.version>
         <aspectj.version>1.9.7</aspectj.version>
-        <allure.version>2.19.0</allure.version>
+        <allure.version>2.21.0</allure.version>
         <allure.maven.version>2.10.0</allure.maven.version>
         <allure-junit5.version>2.20.1</allure-junit5.version>
         <xmlunit-matchers>2.9.0</xmlunit-matchers>
@@ -66,13 +66,13 @@
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
-            <version>RELEASE</version>
+            <version>5.9.2</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
-            <version>RELEASE</version>
+            <version>5.9.2</version>
             <scope>test</scope>
         </dependency>
         <dependency>
