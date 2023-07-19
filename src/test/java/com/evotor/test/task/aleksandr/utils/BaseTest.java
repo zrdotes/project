@@ -15,9 +15,9 @@ import static com.evotor.test.task.aleksandr.config.ConfigSingle.config;
 
 public class BaseTest extends WebDriverProvider {
 
-    protected OrderScooter orderScooter = new OrderScooter();
+    protected OrderScooterPage orderScooterPage = new OrderScooterPage();
     protected MainPage mainPage = new MainPage();
-    protected OrderStatus orderStatus = new OrderStatus();
+    protected OrderStatusPage orderStatusPage = new OrderStatusPage();
 
     @BeforeAll
     public static void beforeClass() {

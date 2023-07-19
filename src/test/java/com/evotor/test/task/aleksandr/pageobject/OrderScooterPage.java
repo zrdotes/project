@@ -7,11 +7,11 @@ import io.qameta.allure.Step;
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.*;
 
-public class OrderScooter {
+public class OrderScooterPage {
 
     // Elements
 
-    private SelenideElement
+    private final SelenideElement
             orderSamokatButton = $x("//button[@class='Button_Button__ra12g']"),
             nameField = $x("//input[@type='text'][@placeholder='* Имя']"),
             surNameField = $x("//input[@type='text'][@placeholder='* Фамилия']"),
@@ -30,8 +30,8 @@ public class OrderScooter {
             yesOrderButton = $x("//*[contains(text(),'Да')]"),
             orderIsConfirmedText = $x("//div[contains(text(),'Заказ оформлен')]");
 
-    @Step("Для кого самокат")
-    public OrderScooter orderScooter() {
+    @Step("Заполнить данные для заказа на странице 'Для кого'")
+    public OrderScooterPage orderScooter() {
         orderSamokatButton.click();
         nameField.setValue("Иван");
         surNameField.setValue("Иванов");
@@ -44,8 +44,8 @@ public class OrderScooter {
         return this;
     }
 
-    @Step("Про аренду")
-    public OrderScooter aboutRent() {
+    @Step("Заполнить данные для заказа на странице 'Про аренду'")
+    public OrderScooterPage aboutRent() {
         whenBringScooterField.click();
         julyNineDate.click();
         rentalPeriodField.click();

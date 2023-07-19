@@ -8,7 +8,7 @@ public class OrderScooterTest extends BaseTest {
 
     @Test
     void orderScooterPageTest(){
-        orderScooter
+        orderScooterPage
                 .orderScooter()
                 .aboutRent();
     }

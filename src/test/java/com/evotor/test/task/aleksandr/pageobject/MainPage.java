@@ -9,7 +9,7 @@ import static com.codeborne.selenide.Selenide.$x;
 public class MainPage {
 
     // Elements
-    private SelenideElement
+    private final SelenideElement
 
             howMuchIsItDDList = $x("//*[@id ='accordion__heading-0']"),
             howMuchIsItText = $x("//*[contains(text(),'Сутки')]"),
@@ -29,7 +29,7 @@ public class MainPage {
             outsideTheMoscowRingRoadText = $x("//*[contains(text(),'Всем самокатов!')]");
 
     // Actions
-    @Step("Проверка выпадающего текста")
+    @Step("Проверить выпадающий текст")
     public MainPage checkDropdownTextMatches() {
         howMuchIsItDDList.scrollTo().click();
         howMuchIsItText.shouldHave(text("Сутки — 400 рублей. Оплата курьеру — наличными или картой."));

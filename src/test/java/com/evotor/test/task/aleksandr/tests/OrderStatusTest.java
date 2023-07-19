@@ -7,6 +7,6 @@ public class OrderStatusTest extends BaseTest {
 
     @Test
     void orderStatusTest(){
-        orderStatus.actionsInOrderStatus();
+        orderStatusPage.actionsInOrderStatus();
     }
 }
