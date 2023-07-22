@@ -6,8 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="EVOTOR" />
+        <module name="TaskScooterYandex" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="EVOTOR" target="17" />
+    </bytecodeTargetLevel>
   </component>
 </project>
